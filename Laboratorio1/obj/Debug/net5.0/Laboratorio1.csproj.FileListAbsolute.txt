@@ -1,0 +1,16 @@
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.exe
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.deps.json
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.runtimeconfig.json
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.runtimeconfig.dev.json
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.dll
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\ref\Laboratorio1.dll
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\bin\Debug\net5.0\Laboratorio1.pdb
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.csproj.AssemblyReference.cache
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.AssemblyInfoInputs.cache
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.AssemblyInfo.cs
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.dll
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\ref\Laboratorio1.dll
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.pdb
+C:\Users\Gabriela_Viana\Projetos C#\Laboratorio1\obj\Debug\net5.0\Laboratorio1.genruntimeconfig.cache
