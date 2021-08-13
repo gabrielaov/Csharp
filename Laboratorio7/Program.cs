@@ -42,6 +42,8 @@ namespace Laboratorio7
         //pessoas.Sort(new PessoaComparadorIdade());
 
         //pessoas.Sort((p1, p2) => p1.nome.CompareTo(p2.nome));
+
+        //ORDENANDO POR IDADE
         pessoas.Sort((n1, n2) => n1.idade.CompareTo(n2.idade));
 
         Console.WriteLine("Pessoas ordenadas ");
@@ -50,7 +52,16 @@ namespace Laboratorio7
             Console.WriteLine(pessoa.nome + " " + pessoa.idade);
         }
 
-        Console.WriteLine(pessoas.Exists(p => p.nome == "Eder"));
+        //ORDENANDO POR NOME
+        pessoas.Sort((n1, n2) => n1.nome.CompareTo(n2.nome));
+
+        Console.WriteLine("Pessoas ordenadas ");
+        foreach (Pessoa pessoa in pessoas)
+        {
+            Console.WriteLine(pessoa.nome + " " + pessoa.idade);
+        }
+
+        //Console.WriteLine(pessoas.Exists(p => p.nome == "Eder"));
 
         }
     }

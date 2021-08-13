@@ -5,8 +5,8 @@ namespace Laboratorio7
 {
     public class Pessoa : IComparable<Pessoa>
     {
-        public string nome {get; set; }
-        public int idade {get; set; }
+        public string nome { get; set; }
+        public int idade { get; set; }
 
         public int CompareTo(Pessoa other)
         {
@@ -18,15 +18,15 @@ namespace Laboratorio7
             {
                 return nome.CompareTo(other.nome);
             }
-                
+
         }
 
     }
-        public class PessoaComparadorIdade : IComparer<Pessoa>
+    public class PessoaComparadorIdade : IComparer<Pessoa>
+    {
+        public int Compare(Pessoa x, Pessoa y)
         {
-            public int Compare(Pessoa x, Pessoa y)
-            {
-                return x.idade.CompareTo(y.idade);
-            }
+            return x.idade.CompareTo(y.idade);
         }
     }
+}
