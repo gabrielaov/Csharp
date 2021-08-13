@@ -18,6 +18,8 @@ namespace Laboratorio9
         }
 
         public delegate void MeuDelegate(string msg);
+
+        //delegate recebendo um evento (LimiteSuperiorEvent)
         public event MeuDelegate LimiteSuperiorEvent;
 
         private void OnLimiteSuperiorEvent()
