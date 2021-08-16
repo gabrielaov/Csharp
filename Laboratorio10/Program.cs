@@ -16,6 +16,34 @@ namespace Laboratorio10
                 new Pessoa{Nome = "Ana", DataNascimento = new DateTime(1999, 12, 11), Casada = false},
             };
 
+            var linq6 = pessoas.OrderBy(p => p.DataNascimento).First();
+            
+                Console.WriteLine(linq6);
+            
+
+            /*
+
+            var linq5 = from p in pessoas   
+                        group p by p.Casada into grupoPessoas
+                        select new {Casados = grupoPessoas.Key, Pessoas = grupoPessoas.Key};
+
+                        */
+
+                        /*
+
+            var linq5 = pessoas.GroupBy(p => p.Casada).;
+            
+            foreach (var g in linq5)
+            {
+                Console.WriteLine(g.Key);
+                foreach (var p in g)
+                {
+                    Console.WriteLine(p);
+                }
+            }
+
+            /*
+            
             /*
 
             var linq1 = 
