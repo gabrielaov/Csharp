@@ -19,8 +19,7 @@ namespace DemoRest1.Services
         public IEnumerable<ConsultaCep> ConsultaTodos()
         {
             return _dados.Values;
-        }
-
+        }     
         public CepMemoriaServices()
         {
             _dados.TryAdd("92330220", new ConsultaCep{
@@ -38,6 +37,16 @@ namespace DemoRest1.Services
                 Estado = "SC",
                 Cep = "92589620"
             });
+        }
+
+        public void FazAlgoRuim()
+        {
+            throw new System.Exception("Algo ruim aconteceu");
+        }
+
+        public void Cadastrar(ConsultaCep novoCep)
+        {
+            _dados.TryAdd(novoCep.Cep, novoCep);
         }
     }   
 }

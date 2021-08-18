@@ -23,8 +23,8 @@ namespace DemoRest1.Controllers
             _cepService = cepService;
         }     
 
-        //GET /cep/90210010
-        [HttpGet("{cep}")] //ao lado de cep/ buscara a string definida no metodo ConsultaCep 
+        //GET /cep/"90210010"
+        [HttpGet("{cep:regex(^\\d{{8}}$)}")] //ao lado de cep/ buscara a string definida no metodo ConsultaCep 
         public ActionResult<ConsultaCep> ConsultaCep(string cep)
         {
             _logger.LogInformation($"ConsultaCep: {cep}");
@@ -42,6 +42,31 @@ namespace DemoRest1.Controllers
         {
             _logger.LogInformation("ConsultaCeps");
             return _cepService.ConsultaTodos();
+        }
+
+        //GET /deuruim
+        [HttpGet("deuruim")]
+        public void Deuruim()
+        {
+            _cepService.FazAlgoRuim();
+        }
+
+        //POST /cep
+        [HttpPost]
+        public ActionResult<ConsultaCep> CadastrarCep(ConsultaCep novoCep)
+        {
+            _logger.LogInformation($"CadastrarCep: {novoCep}");
+            var existente = _cepService.ConsultaPorCep(novoCep.Cep);
+            if (existente != null)
+            {
+                return BadRequest("CEP já cadastrado!");
+            }
+            _cepService.Cadastrar(novoCep);
+            return CreatedAtAction(
+                nameof(ConsultaCep),
+                new { cep = novoCep.Cep },
+                novoCep
+            );
         }
     }
 }
